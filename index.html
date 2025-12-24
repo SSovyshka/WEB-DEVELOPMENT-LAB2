@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота CSS</title>
+
+    <style>
+        h2 {
+            border-bottom: 1px solid #000;
+        }
+
+        .block-elem {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .inline-elem {
+            background-color: #ffff99;
+        }
+    </style>
+
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<h1>Лабораторна робота</h1>
+
+<h2>Block та Inline елементи</h2>
+<div class="block-elem">
+    Це block елемент
+</div>
+<p>
+    Це <span class="inline-elem">inline елемент</span> в тексті.
+</p>
+
+<h2>Таблиця</h2>
+<table>
+    <tr>
+        <th>Назва</th>
+        <th>Опис</th>
+    </tr>
+    <tr>
+        <td>Inline-style</td>
+        <td style="color: red;">style=""</td>
+    </tr>
+    <tr>
+        <td>style</td>
+        <td>У голові</td>
+    </tr>
+    <tr>
+        <td>Зовнішній CSS</td>
+        <td>style.css</td>
+    </tr>
+</table>
+
+<h2>Position</h2>
+<div class="pos-box">
+    <div class="abs-elem">NEW</div>
+    Текст з position: relative і absolute елементом
+</div>
+
+<h2>Float</h2>
+<div class="clearfix">
+    <img class="float-box" src="https://nure.ua/wp-content/themes/nure/icons/apple-touch-icon.png" alt="NURE">
+    <p>Це текст, який обтікає зображення. Властивість float дозволяє розташовувати елементи поруч один з одним.</p>
+</div>
+
+<h2>Контакти</h2>
+<div class="contact-block">
+    <img src="https://nure.ua/wp-content/themes/nure/icons/apple-touch-icon.png" style="width: 60px; height: 60px;"/>
+    <div class="contact-info">
+        <p style="margin: 0; font-weight: bold;" >ХНУРЕ</p>
+        <p style="margin: 0;"><a href="https://nure.ua/" >https://nure.ua/</p>
+    </div>
+</div>
+
+</body>
+</html>
